@@ -114,7 +114,7 @@ func main() {
 					"campanhas":  campanhas,
 					"precoLivro": filial.PrecoLivro,
 				}
-
+				// TODO Implementar lançamento de mensagens no kafka
 				jsonOutput, err := json.Marshal(output)
 				if err != nil {
 					log.Fatal(err)
